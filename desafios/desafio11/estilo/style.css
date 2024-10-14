@@ -10,6 +10,8 @@ html, body {
     background-color: darkgray;
     margin: 0px;
     padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
 }
 
 
@@ -28,6 +30,7 @@ header > h1 {
     padding: 50px;
     padding-bottom: 0px;
     text-align: center;
+    font-size: 4.5vw;
 }
 
 header > p {
@@ -52,6 +55,7 @@ section {
     padding-bottom: 10vh;
     padding-left: 30px;
     line-height: 2em;
+    font-size: 3.5vw;
 }
 
 section.normal {
@@ -64,8 +68,8 @@ section.imagem {
     color: white;
 }
 .imagem > p {
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.252);
-    width: 400px;
 }
 
 footer {
