@@ -5,80 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 014</title>
     <style>
+        body {
+            min-height: 100vh;
+            display: inline-block;
+        }
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            
+            
+            
+            
+        }
+        .cinza {
+            background-color: rgb(151, 150, 150);
+            color: white;
+        }
+        table {
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        
+       .ladoleft {
+            text-align: left;
+            padding-left: 10px;
+        }
        
-       th {
-        border: 1px solid black;
-        height: 2.5em;
-        width: 10em;
+       td,th {
+        border: 2px solid black;
+        height: 6vh;
+        width: 20vh;
         text-align: center;
        }
+       
+
        
     </style>
 </head>
 <body>
+    <h1>Tabela de notas de cada matéria</h1>
     <table>
-        <thead>
         
+        <thead class="cinza">
+            
+            <tr>
                 <th rowspan="2" scope="col">
                     Área
                 </th>
-                <th rowspan="2">Disciplinas</th>
-                <th>Notas</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2">Notas</th>
+                <th rowspan="2" scope="col">Médias</th>
+            </tr>
+            <tr>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
          </thead>
         <tbody>
             <tr><!--Primeira linha do quadro Exatas-->
-            <th>Exatas</th>
-            <td>b</td>
-            <td>c</td>
-            <td>d</td>
-            <td>e</td>
+            <th rowspan="4" scope="rowgroup">Exatas</th>
+            <td class="ladoleft">Matemática</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
             </tr>
 
             <tr><!--Segunda linha do quadro Exatas-->
-            <td>f</td>
-            <td>g</td>
-            <td>h</td>
-            <td>i</td>
+            <td class="ladoleft">Física</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
             </tr>
 
             <tr><!--Terceira linha do quadro Exatas-->
-            <td>j</td>
-            <td>k</td>
-            <td>l</td>
-            <td>m</td>
+            <td class="ladoleft">Quimica</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
             </tr>
 
             <tr><!--Quarta linha do quadro Exatas-->
-            <td>n</td>
-            <td>o</td>
-            <td>p</td>
-            <td>q</td>
+            <td class="ladoleft">Biologia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
             </tr>
 
-            <tr><!--Média de Exatas-->
-                <th>Média de Exatas</th>
+            <tr class="cinza"><!--Média de Exatas-->
+                <th colspan="4" class="ladoleft">Média de Exatas</th>
 
                 <td>0.0</td>
             </tr>
 
             <tr><!--Primeira linha do quadro Humanas-->
-                <th>Humanas</th>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
 
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td class="ladoleft">História</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
             </tr>
 
             <tr><!--Segunda linha do quadro Humanas-->
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td class="ladoleft">Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
             </tr>
 
-            <tr><!--Media de humanas-->
-                <th>Média de Humanas</th>
+            <tr class="cinza"><!--Media de humanas-->
+                <th colspan="4" class="ladoleft">Média de Humanas</th>
 
                 <td>0.0</td>
             </tr>
