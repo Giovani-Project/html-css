@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));/**/
+    row-gap: 20px;/* espaçamento vertical entre as colunas*/
+    column-gap: 50px;/* espaçamento horizontal entre as colunas*/
+
+}
+
+.item {
+    background-color: aquamarine;
+    
+}
